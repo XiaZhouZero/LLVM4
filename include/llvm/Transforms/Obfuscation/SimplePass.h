@@ -11,9 +11,13 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+#include "llvm/Support/raw_ostream.h"
+#include "llvm/ADT/Statistic.h"
+#include "llvm/Support/Format.h"
 
 using namespace std;
 
 namespace llvm {
+    ModulePass *createSimplePass();
     ModulePass *createSimplePass(bool flag);
 }
